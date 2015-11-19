@@ -1,0 +1,29 @@
+.data-tree ul{
+	margin-left: 20px;
+}
+.data-tree ul li{
+	clear: both;
+}
+
+.data-tree .key{
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.empty-expander:before{
+	content: "\00a0\00a0\00a0";
+}
+.expander{
+	font-size: 9px;
+	padding-right: 2px;
+	line-height: 19px;
+}
+.data-tree .value{
+
+}
+
+.selected{
+	background-color: #000;
+	color: #fff;
+}
