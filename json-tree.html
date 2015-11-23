@@ -1,5 +1,5 @@
 <ul class="list-unstyled data-tree">
-	<li ng-repeat="(key, value) in json" ng-init="expand=false;">
+	<li ng-repeat="(key, value) in data" ng-init="expand=false;">
 		<span ng-class="getClass(value, expand)" class="pull-left text-primary"></span>
 		<div
 			class="key text-primary"
@@ -10,7 +10,6 @@
 		</div>
 		<div ng-if="isExpandable(value)">
 			<div class="value">{{getType(value)}}</div>
-			<div ng-include="'json-tree.html'" ng-init="json=value" ng-show="expand"></div>
 		</div>
 	</li>
 </ul>
