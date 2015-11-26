@@ -106,7 +106,7 @@ function($compile, $sce, $templateCache, $templateRequest, Tree){
 			$templateRequest('js/tree/treeBranch.html').then(function(){
 				element.append($templateCache.get('js/tree/treeBranch.html'));
 				if (typeof $scope.data === 'object'){
-					element.append('<div tree="data" search="search" ng-show="expand"></div>');
+					element.append('<div tree="::data" search="search" ng-show="expand"></div>');
 				}
 				$compile(element.contents())($scope);
 			});
