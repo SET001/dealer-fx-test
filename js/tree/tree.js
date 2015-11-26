@@ -109,9 +109,7 @@ function($compile, $sce, $templateCache, $templateRequest, Tree){
 					element.append('<div tree="data" search="search" ng-show="expand"></div>');
 				}
 				$compile(element.contents())($scope);
-
 			});
-
 		}
 	}
 }]);
