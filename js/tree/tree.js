@@ -88,9 +88,11 @@ function($compile, $sce, $templateCache, $templateRequest, Tree){
 					}));
 			};
 
-			$scope.$watch('search', function(){
-				$scope.expand = false;
-				$scope.value = $scope.getValue();
+			$scope.$watch('search', function(search){
+				if (search){
+					$scope.expand = false;
+					$scope.value = $scope.getValue();
+				}
 			});
 
 
